@@ -23,10 +23,10 @@ manifest:
       remote: urob
       revision: main
       clone-depth: 1
-    #- name: zmk-rgbled-widget
-    #  remote: hitsmaxft
-    #  revision: main
-    #  clone-depth: 1
+    - name: zmk-rgbled-widget
+      remote: hitsmaxft
+      revision: a2b29334b8598d7351c1f4429c5c083b2c0a3bc5
+      clone-depth: 1
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main
