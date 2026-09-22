@@ -110,7 +110,7 @@
 &trans        &kp F11        &kp F12         &trans          &trans            &trans    &trans        &trans           &kp EQUAL         &kp N1        &kp N2        &kp N3       &kp BSLH     &trans
 &trans        &trans         &trans          &trans          &trans            &trans                &kp N0            &kp N0              &trans          &trans        &trans        &trans
             >;
-            sensor-bindings = <&trans &trans>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         layer_3 {
@@ -121,7 +121,7 @@
 &trans        &trans         &kp N7          &kp N8          &kp N9            &trans    &trans        &trans           &kp HOME          &kp END       &kp DOWN      &kp DOWN     &kp PG_DN    &trans
 &trans        &trans         &trans          &kp N0          &trans            &trans                &trans            &trans             &trans          &trans        &trans        &trans
             >;
-            sensor-bindings = <&trans &trans>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         layer_4 {
