@@ -83,91 +83,121 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp ESC       &kp Q          &kp W          &kp E          &kp R             &kp T                 &kp Y             &kp U             &kp I           &kp O        &kp P        &kp DEL
-&vial_mt LCTRL TAB  &kp A          &vial_mt LSHFT S    &vial_lt 2 D        &kp F             &kp G                 &kp H             &kp J             &vial_mt RSHFT K     &kp L        &kp SEMI     &kp ENTER
-&kp LSHFT      &kp Z          &kp X          &kp C          &kp V             &kp B      &kp C_MUTE    &mkp MB3         &kp N             &kp M        &kp COMMA    &kp DOT       &kp CAPSLOCK &kp ENTER
-&mo 4          &none          &none          &kp BSPC       &vial_mt LALT BSPC     &kp SPACE             &mo 1             &mo 3             &kp BSPC        &none        &none        &kp INS
+&kp ESC             &kp Q  &kp W             &kp E         &kp R               &kp T                            &kp Y  &kp U  &kp I             &kp O    &kp P         &kp DEL
+&vial_mt LCTRL TAB  &kp A  &vial_mt LSHFT S  &vial_lt 2 D  &kp F               &kp G                            &kp H  &kp J  &vial_mt RSHFT K  &kp L    &kp SEMI      &kp ENTER
+&kp LSHFT           &kp Z  &kp X             &kp C         &kp V               &kp B      &kp C_MUTE  &mkp MB3  &kp N  &kp M  &kp COMMA         &kp DOT  &kp CAPSLOCK  &kp ENTER
+&mo 4               &none  &none             &kp BSPC      &vial_mt LALT BSPC  &kp SPACE                        &mo 1  &mo 3  &mo 2             &none    &none         &kp INS
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         layer_1 {
             display-name = "Symbols";
             bindings = <
-&kp LS(GRAVE) &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(N4)        &kp LS(N5)            &kp LS(N6)        &kp LS(N7)        &kp LS(N8)      &kp LS(N9)   &kp LS(N0)   &trans
-&trans        &kp MINUS      &vial_mt LSHFT EQUAL &kp LS(SEMI)   &kp SEMI          &kp LBKT              &kp RBKT          &trans             &vial_mt RSHFT SQT   &trans        &trans        &trans
-&trans        &trans         &trans          &trans         &kp BSLH          &kp COMMA  &kp C_MUTE    &mkp MB3         &kp DOT           &kp FSLH     &trans        &kp LS(FSLH)  &kp FSLH     &trans
-&macro_m0     &macro_m1      &macro_m2       &trans         &trans            &trans                &trans            &trans             &trans          &none         &none         &none
+&kp LS(GRAVE)  &kp LS(N1)  &kp LS(N2)            &kp LS(N3)    &kp LS(N4)  &kp LS(N5)                        &kp LS(N6)  &kp LS(N7)  &kp LS(N8)          &kp LS(N9)    &kp LS(N0)  &trans
+&trans         &kp MINUS   &vial_mt LSHFT EQUAL  &kp LS(SEMI)  &kp SEMI    &kp LBKT                          &kp RBKT    &trans      &vial_mt RSHFT SQT  &trans        &trans      &trans
+&trans         &trans      &trans                &trans        &kp BSLH    &kp COMMA   &kp C_MUTE  &mkp MB3  &kp DOT     &kp FSLH    &trans              &kp LS(FSLH)  &kp FSLH    &trans
+&macro_m0      &macro_m1   &macro_m2             &trans        &trans      &trans                            &trans      &trans      &trans              &none         &none       &none
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         layer_2 {
             display-name = "Function";
             bindings = <
-&kp LS(GRAVE) &kp F1         &kp F2          &kp F3          &kp F4            &kp F5                &kp FSLH          &kp N7             &kp N8           &kp N9        &kp LS(BSLH) &trans
-&trans        &kp F6         &kp F7          &kp F8          &kp F9            &kp F10               &kp MINUS         &kp N4             &kp N5           &kp N6        &kp LS(EQUAL) &trans
-&trans        &kp F11        &kp F12         &trans          &trans            &trans    &trans        &trans           &kp EQUAL         &kp N1        &kp N2        &kp N3       &kp BSLH     &trans
-&trans        &trans         &trans          &trans          &trans            &trans                &kp N0            &kp N0              &trans          &trans        &trans        &trans
+&kp LS(GRAVE)  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                   &kp FSLH   &kp N7  &kp N8  &kp N9  &kp LS(BSLH)   &trans
+&trans         &kp F6   &kp F7   &kp F8  &kp F9  &kp F10                  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp LS(EQUAL)  &trans
+&trans         &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp BSLH       &trans
+&trans         &trans   &trans   &trans  &trans  &trans                   &kp N0     &kp N0  &trans  &trans  &trans         &trans
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         layer_3 {
             display-name = "Navigation";
             bindings = <
-&trans        &kp EQUAL      &kp N1          &kp N2          &kp N3            &kp MINUS             &kp PG_UP         &trans             &kp UP           &kp UP        &kp PG_UP     &trans
-&trans        &kp MINUS      &kp N4          &kp N5          &kp N6            &kp EQUAL             &kp PG_DN         &kp LEFT            &kp DOWN         &kp RIGHT     &kp RIGHT     &trans
-&trans        &trans         &kp N7          &kp N8          &kp N9            &trans    &trans        &trans           &kp HOME          &kp END       &kp DOWN      &kp DOWN     &kp PG_DN    &trans
-&trans        &trans         &trans          &kp N0          &trans            &trans                &trans            &trans             &trans          &trans        &trans        &trans
+&trans  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp MINUS                  &kp PG_UP  &trans    &kp UP    &kp UP     &kp PG_UP  &trans
+&trans  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL                  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RIGHT  &trans
+&trans  &trans     &kp N7  &kp N8  &kp N9  &trans     &trans  &trans  &kp HOME   &kp END   &kp DOWN  &kp DOWN   &kp PG_DN  &trans
+&trans  &trans     &trans  &kp N0  &trans  &trans                     &trans     &trans    &trans    &trans     &trans     &trans
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
         layer_4 {
             display-name = "Layer 4";
             bindings = <
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &mkp MB3
-&none &none &none &none &none &none &kp C_MUTE &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &mkp MB3
+&none  &none  &none  &none  &none  &none  &kp C_MUTE  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
         };
 
-        layer_5 { display-name = "Layer 5"; bindings = <
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &mkp MB3
-&none &none &none &none &none &none &kp C_MUTE &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
->; sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>; };
+        layer_5 {
+            display-name = "Layer 5";
+            bindings = <
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &mkp MB3
+&none  &none  &none  &none  &none  &none  &kp C_MUTE  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+            >;
 
-        layer_6 { display-name = "Layer 6"; bindings = <
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &mkp MB3
-&none &none &none &none &none &none &kp C_MUTE &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
->; sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>; };
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
+        };
 
-        layer_7 { display-name = "Layer 7"; bindings = <
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &mkp MB3
-&none &none &none &none &none &none &kp C_MUTE &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
->; sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>; };
+        layer_6 {
+            display-name = "Layer 6";
+            bindings = <
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &mkp MB3
+&none  &none  &none  &none  &none  &none  &kp C_MUTE  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+            >;
 
-        layer_8 { display-name = "Layer 8"; bindings = <
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &mkp MB3
-&none &none &none &none &none &none &kp C_MUTE &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
->; sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>; };
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
+        };
 
-        layer_9 { display-name = "Layer 9"; bindings = <
-&none &none &none &none &none &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &mkp MB3
-&none &none &none &none &none &none &kp C_MUTE &none &none &none &none &none &none &none
-&none &none &none &none &none &none &none &none &none &none &none &none
->; sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>; };
+        layer_7 {
+            display-name = "Layer 7";
+            bindings = <
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &mkp MB3
+&none  &none  &none  &none  &none  &none  &kp C_MUTE  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
+        };
+
+        layer_8 {
+            display-name = "Layer 8";
+            bindings = <
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &mkp MB3
+&none  &none  &none  &none  &none  &none  &kp C_MUTE  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
+        };
+
+        layer_9 {
+            display-name = "Layer 9";
+            bindings = <
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &mkp MB3
+&none  &none  &none  &none  &none  &none  &kp C_MUTE  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none  &none  &none  &none  &none  &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
+        };
     };
 };
