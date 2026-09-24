@@ -119,9 +119,9 @@
         layer_3 {
             display-name = "Navigation";
             bindings = <
-&trans  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp MINUS                  &kp PG_UP  &trans    &kp UP    &kp UP     &kp PG_UP  &trans
-&trans  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL                  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp RIGHT  &trans
-&trans  &trans     &kp N7  &kp N8  &kp N9  &trans     &trans  &trans  &kp HOME   &kp END   &kp DOWN  &kp DOWN   &kp PG_DN  &trans
+&trans        &kp EQUAL      &kp N1          &kp N2          &kp N3            &kp MINUS             &trans             &kp HOME           &trans           &kp PG_UP     &trans        &trans
+&trans        &kp MINUS      &kp N4          &kp N5          &kp N6            &kp EQUAL             &kp LEFT          &kp DOWN            &kp UP           &kp RIGHT     &trans        &trans
+&trans        &trans         &kp N7          &kp N8          &kp N9            &trans    &trans        &trans           &trans            &kp END       &trans        &kp PG_DN     &trans        &trans
 &trans  &trans     &trans  &kp N0  &trans  &trans                     &trans     &trans    &trans    &trans     &trans     &trans
             >;
 
